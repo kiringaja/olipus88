@@ -1,0 +1,39 @@
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to top, #fbbd08, #712cf9);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+}
+.container {
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 4px;
+  justify-content: center;
+  margin: 20px auto;
+}
+.grid img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.grid img.pop {
+  transform: scale(1.4);
+  opacity: 0;
+}
+.controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.win-text {
+  font-size: 20px;
+  color: yellow;
+  margin-top: 15px;
+}
